@@ -1,0 +1,26 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./Rem.js",
+    "start:js": "Rem.js"
+  },
+  "auther": "",
+  "License": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "mongoose": "^6.3.8"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.18",
+    "prompt-sync": "^4.2.0",
+    "typescript": "^4.7.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
