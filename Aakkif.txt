@@ -2,4 +2,4 @@ first name : aakkif
 last name: ahamed
 age : 22
 city : Eravur
-work as a intern @ EMD labs
+work as an intern @ EMD labs
