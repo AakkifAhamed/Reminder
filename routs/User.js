@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var reminder = require("./reminder");
+var reminder = require("../Schema/reminder");
 var bodyparser = require("body-parser");
 router.use(bodyparser.urlencoded({ extended: false }));
 router.use(bodyparser.json());

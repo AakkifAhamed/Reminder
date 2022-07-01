@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon ./Rem.js",
-    "start:js": "Rem.js"
+    "watch": "nodemon ./index.js",
+    "start:js": "index.js"
   },
   "auther": "",
   "License": "ISC",
