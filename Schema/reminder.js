@@ -1,5 +1,4 @@
 var mongoose = require("mongoose");
-
 var Schema = mongoose.Schema;
 
 var reminderSchema = new Schema({
@@ -18,7 +17,7 @@ var reminderSchema = new Schema({
             default: Date.now()
         }, 
         Id: {
-            type : Number,
+            type : String,
             autoIndex: true
             
         },

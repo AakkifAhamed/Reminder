@@ -10,7 +10,7 @@ router.post("/users", async (req, res) => {
       console.log("req.body", req.body);
   
       var newreminder = new reminder({
-        Username: req.body.Username,    
+        Username: req.body.Username,
         
       });
     } catch (err) {
@@ -34,4 +34,19 @@ router.post("/users", async (req, res) => {
       else res.send(response);
     });
   })
+
+  router.put("/change-stat/:user_id/:reminder_id", async (req, res)=>{
+    const {user_id,reminder_id} =req.params;
+    console.log(req.params);
+    await reminder.findByIdAndUpdate(user_id,{
+      "Reminder.id":reminder_id,
+      $set:{"Reminder.Noted": true},
+      new:true
+    })
+    async (err, response) => {
+      if (err) res.send(err);
+      else res.send(response);
+    }
+  } )
+  
   module.exports = router;
